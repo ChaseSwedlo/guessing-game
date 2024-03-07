@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Chase Swedlo">
+        <meta name="description" content="Reading mouse input">
+        <meta name="keywords" content="html, css, web, web development">
+        <title>Guessing Game</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/mrspecht/cdn/reset.css">
+        <link rel="stylesheet" href="./assets/style/index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+        <script src="./assets/script/app.js" defer></script>
+    </head>
+    <body>
+        <main>
+            <section class="content grid-center">
+                <div class="container">
+                    <div class="main-content grid-center">
+                        <div>
+                            <h2>Guesses: <span class="num-of-guesses">5</span></h2>
+                            <div class="number-circle"><h1 class="number">0</h1></div>
+                        </div>
+                        <form>
+                            <input type="text" class="input" placeholder="Guess a number from 1-100">
+                        </form>
+                        <input type="button" class="reset-button hide" value="Play again">
+                    </div>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>

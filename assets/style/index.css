@@ -1,0 +1,96 @@
+@charset "utf-8";
+
+:root {
+    --main-color: rgb(152, 119, 123);
+    --font-color: rgb(255, 255, 255);
+    --border-radius: 6px;
+}
+
+.container {
+    width: min(100% - 60px, 1080px);
+    margin-inline: auto;
+}
+
+body {
+    background-color: var(--main-color);
+    font-family: "Inter", Arial, sans-serif;;
+    color: var(--font-color);
+}
+
+.flex {
+    display: flex;
+}
+
+.grid-center {
+    display: grid;
+    place-items: center;
+}
+
+/*Main*/
+
+section {
+    height: 100vh;
+}
+
+h2{
+    text-align: center;
+    font-size: 42px;
+    padding-bottom: 20px;
+}
+
+.number-circle {
+    height: 250px;
+    width: 250px;
+    background-color: var(--font-color);
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    margin-bottom: 20px;
+}
+
+.number {
+    color: var(--main-color);
+    font-size: 100px;
+}
+
+input[type=text] {
+    width: 400px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.187);
+    border-radius: var(--border-radius);
+    text-align: center;
+    color: var(--font-color);
+    padding: 0 15px;
+}
+
+input[type=text]::placeholder {
+    opacity: 1;
+    color: var(--font-color);
+}
+
+input[type=button] {
+    background-color: var(--font-color);
+    color: var(--main-color);
+    width: 160px;
+    line-height: 40px;
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+    border-radius: var(--border-radius);
+    transition-duration: 0.2s;
+    position: fixed;
+    top: 35px;
+    right: 35px;
+}
+
+input[type=button]:hover {
+    background-color: rgba(255, 255, 255, 0.877);
+}
+
+input[type=button]:active {
+    background-color: rgba(255, 255, 255, 0.747);
+}
+
+.hide {
+    display: none;
+}
