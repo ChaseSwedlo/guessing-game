@@ -5,7 +5,7 @@ const number = document.querySelector('.number');
 const count = document.querySelector('.num-of-guesses');
 const button = document.querySelector('.reset-button');
 
-let myNum = Math.floor(Math.random() * 100);
+let myNum = Math.floor(Math.random() * 101);
 let counter = 4;
 
 function computeGuess(num) {
@@ -21,7 +21,7 @@ function computeGuess(num) {
 
 function reset() {
     counter = 4;
-    myNum = Math.floor(Math.random() * 100);
+    myNum = Math.floor(Math.random() * 101);
     number.innerText = 0;
     input.value = '';
     input.disabled = false;

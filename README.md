@@ -1,0 +1,2 @@
+### Guessing Game
+In this simple game, you have 5 turns to guess a number between 0 and 100. The main goal of this project was to incorporate a reset/play again button. Try the game [here](https://chaseswedlo.github.io/guessing-game/)
