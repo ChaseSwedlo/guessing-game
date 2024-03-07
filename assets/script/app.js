@@ -41,7 +41,7 @@ function getResult(event) {
         event.preventDefault();
         val = input.value;
         
-        if(!isNaN(val) && val != '') {
+        if(!isNaN(val) && val != '' && val >= 0) {
             if(counter > 0) {
                 console.log('test');
                 console.log(counter);
